@@ -76,7 +76,7 @@ namespace Midi
             {
                 throw new ArgumentException("ascent is invalid.");
             }
-            this.name = string.Copy(name);
+            this.name = new string(name);
             this.ascent = new int[ascent.Length];
             Array.Copy(ascent, this.ascent, ascent.Length);
         }
@@ -227,7 +227,7 @@ namespace Midi
         /// <exception cref="ArgumentNullException">tonic or pattern is null.</exception>
         public Scale(Note tonic, ScalePattern pattern)
         {
-            if (tonic == null || pattern == null)
+            if (pattern == null)
             {
                 throw new ArgumentNullException();
             }

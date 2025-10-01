@@ -104,8 +104,8 @@ namespace Midi
             {
                 throw new ArgumentException();
             }
-            this.name = String.Copy(name);
-            this.abbreviation = String.Copy(abbreviation);
+            this.name = new string(name);
+            this.abbreviation = new string(abbreviation);
             this.ascent = new int[ascent.Length];
             Array.Copy(ascent, this.ascent, ascent.Length);
             this.letterOffsets = new int[letterOffsets.Length];
