@@ -3,6 +3,7 @@ Overview
 This [.NET](http://www.microsoft.com/NET) library provides convenient, threadsafe access to [MIDI](https://www.midi.org/) devices. It does this by binding to the [Win32 API](https://msdn.microsoft.com/en-us/library/ms712733(VS.85).aspx) with [P/Invoke](https://msdn.microsoft.com/en-us/library/aa288468(VS.71).aspx) and then wrapping that in an object-oriented API which feels right at home in C# / .NET.
 
 For a taste of what the API offers, check out the [example snippets](https://github.com/jstnryan/midi-dot-net/wiki/Simple-Examples).
+This updated .NET 8.0 version is available on [GitHub](https://github.com/exocs/midi-dot-net).
 
 Features
 ---
@@ -38,8 +39,8 @@ Not-Yet-Features
 
 Requirements
 ---
-* .NET Framework 3.5.
-* Visual Studio C# 2008 (Express or Professional) or later.
+* .NET 8.0
+* Visual Studio C# 2017 or later.
 * winmm.dll, the Win32 multimedia API which is standard on all modern Windows installs.
 
 Reference
